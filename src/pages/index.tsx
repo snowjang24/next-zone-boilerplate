@@ -1,13 +1,10 @@
-import { css } from "@emotion/css";
+import { css } from '@emotion/react'
 
 export default function HomePage() {
-  return (
-    <div
-      css={css`
-        font-size: 2rem;
-      `}
-    >
-      Home Page
-    </div>
-  );
+  return <div css={PageTitle}>Home Page</div>
 }
+
+const PageTitle = css`
+  font-size: 32px;
+  font-weight: bold;
+`
